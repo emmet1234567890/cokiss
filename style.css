@@ -1,0 +1,228 @@
+nav{
+    left: 0;
+    right: 0;
+    position: absolute;
+    padding: 2% 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999999999999999999999999999999;
+    transition: 0.5s;
+    
+}
+
+nav.sticky{
+    position: fixed;
+    padding: 5px 100px;
+    background-color: #161515;
+}
+
+nav.sticky ul li a{
+    color: white;
+    font-weight: 500;
+}
+
+nav img {
+    width: 180px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+nav img:hover {
+    width: 200px;
+}
+.nav-list{
+    flex: 1;
+    text-align: right;
+}
+.nav-list ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 15px;
+    position: relative;
+}
+.nav-list ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.nav-list ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #89cff0;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: 0.5s;
+}
+.nav-list ul li:hover::after{
+    width: 100%;
+}
+.adver img {
+        cursor: pointer;
+        object-fit: cover;
+        margin-top: 15%;
+        margin-left: 60%;
+        animation: Phaseout 6s forwards;
+        
+}
+
+nav .fa-solid.fa-xmark {
+    display: none;
+}
+nav .fa-solid.fa-bars{
+    display: none;
+}
+
+
+/*** Team ***/
+
+body{
+    background:linear-gradient(palevioletred 40%, #89cff0 60%) ;
+    color: black;
+}
+
+.team-item .team-text {
+    position: relative;
+    height: 100px;
+    transition: .5s;
+}
+
+.team-item:hover .team-text {
+    margin-top: -60px;
+    height: 160px;
+}
+
+.team-item .team-text .team-social {
+    opacity: 0;
+    transition: .5s;
+}
+
+.team-item:hover .team-text .team-social {
+    opacity: 1;
+}
+
+.team-item .team-social .btn {
+    display: inline-flex;
+    color: var(--primary);
+    background: #FFFFFF;
+    border-radius: 40px;
+}
+
+.team-item .team-social .btn:hover {
+    color: #FFFFFF;
+    background: var(--primary);
+}
+
+/*---------------Footer------------*/
+
+.End{
+    padding-top: 40px;
+    bottom: 0;
+    background-color: #191C27;
+    margin-top: auto;
+    height: 70vh;
+    max-width: 100%;
+
+    img{
+        padding: 80px 0;
+        width: 200px;
+    }
+}
+
+.details{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+
+    .h1 h1{
+        color: white;
+    }
+}
+
+.Abouts{
+
+
+        .p p{
+            color: white;
+            font-size: small;
+            font-weight: 400;
+    }
+}
+
+.contactss{
+        .p p {
+            color: white;
+            font-size: small;
+            font-weight: 400;
+    }
+
+}
+
+.border{
+    border-left: 1px solid white;
+    height: 310px;
+}
+
+.logos{
+    padding-top: 60px;
+    height: 40vh;
+    background-color: #090b0f;
+
+    .h1 h1{
+        color: white;
+        text-align: center;
+        font-size: xx-large;
+        font-weight: 700;
+    
+    }
+}
+
+.Logia{
+    display: flex;
+    justify-content: center;
+}
+
+.logos i{
+    flex-direction: column;
+    color: #f7f5ed;
+    font-size: 30px;
+    list-style: none;
+    padding: 30px 15px;
+    
+}
+
+.done{
+    color: #000000;
+    font-size: medium;
+    font-weight: 200;
+    text-align: center;
+}
+
+
+
+
+#facebook:hover{
+    color: #4267B2;
+    transition: 0.3s;
+    font-size: 32px;
+}
+
+#youtube:hover{
+    color: #FF0000;
+    transition: 0.3s;
+    font-size: 32px;
+}
+#twitter:hover{
+    color: #1DA1F2;
+    transition: 0.3s;
+    font-size: 32px;
+}
+#tiktok:hover{
+    color: #000000;
+    text-shadow: 3px 2px 2px #ff0050,
+    -3px -2px 2px #00f2ea;
+    transition: 0.3s;
+    font-size: 32px;
+}

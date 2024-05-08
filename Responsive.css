@@ -1,0 +1,49 @@
+@media(max-width:900px){
+    .Content{
+        width: 200px;
+        position: absolute;
+        margin-top: -150px;
+        transform: translateY(-50);
+        text-align: left;
+        color: #fff;
+        animation: transition 2s forwards;
+    }
+    .Content h1{
+        font-size: 20px;
+    }
+    .nav-list ul li{
+        display: block;
+    }
+    .nav-list{
+        position: absolute;
+        background: #009688;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa-solid{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-list ul{
+        padding: 30px;
+    }
+    .Content p{
+        font-size: 1rem;
+        margin: 1% auto;
+        font-weight: 100;
+        line-height: 25px;
+    }
+    .adver img{
+        width: 150px;
+        margin-left: 60%;
+        margin-top: 25%;
+    }
+}
